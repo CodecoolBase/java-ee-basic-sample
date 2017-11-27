@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Java EE Basic Sample</title>
+</h:head>
+<h:body>
+    <h2>Java EE Basic Sample</h2>
+    <h2>Hello, #{greetingController.name}!</h2>
+    <ul>
+        <ui:repeat value="#{customerController.allCustomers}" var="customer">
+            <li>
+                <p>#{customer.firstName} #{customer.lastName}</p>
+            </li>
+        </ui:repeat>
+    </ul>
+    <p><h:link value="Add new customer" outcome="addcustomer" /></p>
+    <p><h:outputLink value="/index.html">Home</h:outputLink></p>
+</h:body>
+</html>
