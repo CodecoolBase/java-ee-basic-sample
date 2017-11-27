@@ -57,10 +57,6 @@
         <!-- WildFly Swarm Fractions -->
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
-            <artifactId>undertow</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wildfly.swarm</groupId>
             <artifactId>cdi</artifactId>
         </dependency>
         <dependency>
@@ -74,6 +70,10 @@
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
             <artifactId>jsf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>jaxrs</artifactId>
         </dependency>
         <!-- Other dependencies -->
         <dependency>
